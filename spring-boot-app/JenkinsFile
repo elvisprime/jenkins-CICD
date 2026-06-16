@@ -55,6 +55,8 @@ pipeline {
                 sh '''
                     set -e
 
+                    git config --global --add safe.directory /var/jenkins_home/workspace/Aimufuapipeline
+
                     pwd
                     ls -la
                     git status
